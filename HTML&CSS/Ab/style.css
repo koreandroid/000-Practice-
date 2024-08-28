@@ -1,0 +1,28 @@
+/*
+  header */
+
+header{
+  background-color: #e0f4ff;
+}
+
+header{
+  height: 12.5vh;
+}
+
+/*
+  main */
+
+#home{
+  background-color: #e0f4ff;
+}
+
+#home{
+  height: 72.5vh;
+}
+
+/*
+  footer */
+
+footer{
+  background-color: #ffeed9;
+}
