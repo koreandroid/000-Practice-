@@ -14,10 +14,33 @@ header{
 
 #home{
   background-color: #e0f4ff;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
 }
 
 #home{
   height: 72.5vh;
+}
+
+.home-title{
+  color: #39a7ff;
+  font-size: xxx-large;
+  font-weight: bold;
+
+  text-align: center;
+}
+
+#nav_btn_group{
+  margin: 2.5vh 0;
+}
+
+#home .my-nav-btn{
+  padding: 1rem 1.5rem;
+
+  font-size: large;
+  font-weight: bold;
 }
 
 /*
