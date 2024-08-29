@@ -6,7 +6,11 @@ header{
 }
 
 header{
+  padding: 1.2vmin;
+
   height: 12.5vh;
+
+  text-align: center;
 }
 
 /*
