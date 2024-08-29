@@ -41,6 +41,58 @@ header{
   font-weight: bold;
 }
 
+article{
+  background-color: #87c4ff;
+}
+
+article{
+  padding: 7rem;
+}
+
+.information-title{
+  color: #39a7ff;
+  font-size: x-large;
+  font-weight: bold;
+
+  text-align: center;
+}
+
+#information>*{
+  margin: 0 auto;
+}
+
+#information blockquote{
+  margin: 7rem;
+
+  line-height: 1.55;
+}
+
+#information blockquote, #information p{
+  font-size: large;
+}
+
+#information .cite{
+  margin: 7rem;
+}
+
+#information>img{
+  display: block;
+
+  margin: 15vh auto;
+}
+
+#information p{
+  margin: 2.89rem;
+}
+
+#information p+.cite{
+  text-align: end;
+}
+
+.cite>a{
+  color: black;
+}
+
 /*
   footer */
 
