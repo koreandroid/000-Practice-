@@ -1,5 +1,13 @@
-body{
-  background: linear-gradient(110deg, #e0f4ff 50%, #39a7ff 50%);
+@media screen and (max-width:739px){
+  body{
+    background-color: #e0f4ff;
+  }
+}
+
+@media screen and (min-width:740px){
+  body{
+    background: linear-gradient(110deg, #e0f4ff 50%, #39a7ff 50%);
+  }
 }
 
 /*
@@ -12,31 +20,60 @@ header{
 /*
   main */
 
-main{
-  display: flex;
-  flex-flow: row nowrap;
+@media screen and (max-width:739px){
+  main{
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  main{
+    height: 87.5vh;
+  }
 }
 
-main{
-  padding: 0 5vw;
+@media screen and (min-width:740px){
+  main{
+    display: flex;
+    flex-flow: row nowrap;
+  }
 
-  height: 87.5vh;
+  main{
+    padding: 0 5vw;
+
+    height: 87.5vh;
+  }
 }
 
-#main_ingredient{
+section#main_ingredient{
   align-items: flex-start;
+
+  padding-right: 13vmax;
 }
 
 #main_ingredient{
   color: black;
 }
 
-#main_ingredient, #secondary_ingredient{
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
+@media screen and (max-width:739px){
+  #main_ingredient, #secondary_ingredient{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
 
-  width: 100%;
+    padding: 0 5vw;
+
+    width: 100%;
+  }
+}
+
+@media screen and (min-width:740px){
+  #main_ingredient, #secondary_ingredient{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+
+    width: 100%;
+  }
 }
 
 .choose-title{
@@ -66,8 +103,21 @@ main .my-nav-btn{
   margin-left: 0.7vw;
 }
 
-#secondary_ingredient{
-  align-items: flex-end;
+@media screen and (max-width:739px){
+  #secondary_ingredient{
+    background-color: #39a7ff;
+    align-items: flex-end;
+
+    padding-left: 13vmax;
+  }
+}
+
+@media screen and (min-width:740px){
+  #secondary_ingredient{
+    align-items: flex-end;
+
+    padding-left: 13vmax;
+  }
 }
 
 #secondary_ingredient{
