@@ -45,6 +45,11 @@ header{
   font-weight: bold;
 }
 
+.custom-tooltip{
+  --bs-tooltip-bg: #39a7ff;
+  --bs-tooltip-color: white;
+}
+
 article{
   background-color: #87c4ff;
 }
