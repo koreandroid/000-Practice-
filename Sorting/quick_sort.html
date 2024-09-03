@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quick Sort 구현 예제</title>
+</head>
+
+<body>
+  <main>
+    <section>
+      <p>
+        <em>자바스크립트</em>로 작성한 <strong>Quick Sort 구현 예제</strong>입니다.<br>
+        <u>!콘솔을 열어 결과를 확인해주세요.</u>
+      </p>
+    </section>
+  </main>
+  <footer></footer>
+
+  <script>
+    var arr = [10, 8, 6, 4, 2];
+
+    quickSort(0, arr.length - 1);
+
+    console.log(arr);
+
+    function quickSort(left, right) {
+      if (left >= right) return
+
+      var pivot = arr[right];
+
+      var l = left, r = right - 1;
+      do
+      {
+        while (arr[l] <= pivot && l < right) l++;
+        while (r >= left && arr[r] >= pivot) r--;
+
+        if (l <= r) {   // l < r임이 보장된다.
+          swap(l, r);
+        } else {
+          break;
+        }
+      } while (true);
+
+      if (l != right) swap(l, right);
+
+      quickSort(left, l - 1);
+      quickSort(l + 1, right);
+    }
+
+    function swap(x, y) {
+      var temp = arr[x];
+      arr[x] = arr[y];
+      arr[y] = temp;
+    }
+  </script>
+</body>
+</html>
