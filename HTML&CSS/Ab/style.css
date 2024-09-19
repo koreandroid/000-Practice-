@@ -66,10 +66,6 @@ article{
   text-align: center;
 }
 
-#information>*{
-  margin: 0 auto;
-}
-
 #information blockquote{
   margin: 7rem;
 
@@ -82,7 +78,7 @@ article{
 }
 
 #information .cite{
-  margin: 7rem 9rem;
+  margin: 10vh 9.9vw;
 }
 
 #information .cite cite>a:link, #information .cite cite>a:visited{
@@ -100,7 +96,7 @@ article{
 }
 
 #information p{
-  margin: 2.89rem;
+  margin: 3rem;
 }
 
 #information p+.cite{
