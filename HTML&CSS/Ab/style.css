@@ -74,6 +74,7 @@ article{
   margin: 7rem;
 
   line-height: 1.55;
+  text-align: center;
 }
 
 #information blockquote, #information p{
@@ -81,7 +82,15 @@ article{
 }
 
 #information .cite{
-  margin: 7rem;
+  margin: 7rem 9rem;
+}
+
+#information .cite cite>a:link, #information .cite cite>a:visited{
+  color: #87c4ff;
+}
+
+#information .cite cite>a:hover{
+  color: #39a7ff;
 }
 
 #information>img{
